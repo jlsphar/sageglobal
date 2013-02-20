@@ -8,26 +8,13 @@
 {% block body_class %}home{% endblock %}
 
 {% block banner %}
-    <h1>{% trans "Welcome to Pinax" %}</h1>
+    <h1>{% trans "Welcome to SAGEGlobal" %}</h1>
     <p>
         {% blocktrans %}
-        <b>Pinax</b> is a <a href="http://djangoproject.com/">Django</a>
-        project intended to provide a starting point for websites. By
-        integrating numerous reusable Django apps to take care of the
-        things that many sites have in common, it lets you focus on what
-        makes your site different.
+        <b>SAGE</b> is a global entrepreneurship network for high school and secondary school students to start, operate, and expand social and commercial enterprises while fulfilling the SAGEGlobal Standard Criterion.
         {% endblocktrans %}
     </p>
-    
-    <h2>About Basic Project</h2>
-    <p>
-        {% blocktrans %}
-        This project takes the account_project and adds profiles and notifications.
-        It is a foundation suitable for many sites that have user accounts with
-        profiles.
-        {% endblocktrans %}
-    </p>
-    
+    <!--
     {% if user.is_authenticated %}
         {% url what_next as what_next_url %}
         <p class="what_next">{% blocktrans %}Wondering <a href="{{ what_next_url }}" class="btn primary large">What Next</a>?{% endblocktrans %}</p>
@@ -40,4 +27,24 @@
             <p>{% blocktrans %}You can <a href="{{ login_url }}" class="btn primary large">Log In</a> to try out the site.{% endblocktrans %}</p>
         {% endifsetting %}
     {% endif %}
+-->
+{% endblock %}
+
+{% block column-1 %}
+    <h2>High School Students</h2>
+    <p>Connect to regional, national, and international networks. Join and take part in this hub for business resources and advice. Have a chance to present on a world stage.</p>
+    <p><a class="btn" href="#">Create &raquo;</a></p>
+{% endblock %}
+
+{% block column-2 %}
+    <h2>University Students</h2>
+    <p>Mentor high school students by visiting, listening, and providing feedback on their ideas and presentations. Find local teams to take part in projects which may very well affect communities surrounding your campus, or become a SAGE Embassador to search and enable young and ambitious youth.</p>
+    <p><a class="btn" href="#">Teach &raquo;</a></p>
+{% endblock %}
+
+
+{% block column-3 %}
+    <h2>Investors</h2>
+    <p>Grant micro-loans to young regional, national, and international entrepreneurs by browsing and supporting their social and commercial projects. Give the leaders of tomorrow the advice they need to go the distance.</p>
+    <p><a class="btn" href="#">Explore &raquo;</a></p>
 {% endblock %}

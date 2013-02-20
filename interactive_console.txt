@@ -1,0 +1,6 @@
+=== MAX OSX ===
+- Start postgres server:
+sudo -u postgres postgres -D sageglobal -p 5433 -h localhost -k /var/pgsql_socket/ --config-file=/usr/local/data/sageglobal/postgresql.conf
+- Edit the /var/www/sageglobal/settings.py to reflect the DB port/user/password
+- Start local dev server:
+sudo python manage.py runserver
